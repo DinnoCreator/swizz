@@ -7,10 +7,8 @@
   overflow: hidden;
   padding-bottom: 10rem;
   padding-top: 10rem;
-  animation: change 6s infinite ease-in-out;
 }
-
-/* .img1 {
+.img1 {
   text-align: center;
   background-image: 
   url(https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
@@ -19,7 +17,7 @@
   overflow: hidden;
   padding-bottom: 10rem;
   padding-top: 10rem;
-} */
+}
 
 .imgText {
   box-shadow: rgb(255 68 0) 0.5rem 0px 0px, rgb(255 68 0) -0.5rem 0px 0px;
@@ -30,14 +28,6 @@
   overflow: hidden;
   border-radius: 4px;
 }
-
-@keyframes change{
-  100%
-  {
-      background-image: url(https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
-  }
-}
-
 .big {
   font-size: 50px;
   font-weight: 700;
