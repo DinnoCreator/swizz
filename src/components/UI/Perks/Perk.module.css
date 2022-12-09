@@ -1,0 +1,27 @@
+/* Feature Box */
+.features {
+    padding: 0% 15% 7%;
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+  }
+  
+  .featuresHeading {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  
+  .featureBox {
+    padding: 5%;
+  }
+  
+  .icon {
+    color: rgba(255, 68, 0, 0.808);
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .icon:hover {
+    color: rgb(255, 68, 0);
+  }
+  
