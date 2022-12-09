@@ -1,0 +1,14 @@
+footer{
+    background-color: rgb(43, 37, 35);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.st{
+    position: relative;
+}
+.headr{
+    color: rgb(255, 68, 0);
+    font-size: 4em;
+    font-weight: 700;
+}

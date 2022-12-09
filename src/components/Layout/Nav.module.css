@@ -1,0 +1,12 @@
+.swizzNav{
+    font-weight: 700!important;
+    color: rgb(255, 68, 0);
+    font-size: 28px;
+}
+
+.navPad{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
