@@ -158,9 +158,11 @@ code {
 }
 
 .carousel-item {
-  transition: opacity 4s ease-in-out;
+  -webkit-transition: opacity 4s ease-in-out !important;
+  transition: opacity 4s ease-in-out !important;
 }
 .carousel-fade .active.carousel-item-start,
 .carousel-fade .active.carousel-item-end {
-  transition: opacity 4s ease-in-out;
+  -webkit-transition: opacity 4s ease-in-out !important;
+  transition: opacity 4s ease-in-out !important;
 }
