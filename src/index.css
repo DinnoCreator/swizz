@@ -167,3 +167,9 @@ code {
   -webkit-transition: opacity 4s ease-in-out !important;
   transition: opacity 0 4s !important;
 } */
+
+.cont{
+  -webkit-transition: opacity 4s ease-in-out !important;
+  transition: opacity 4s ease-in-out !important;
+
+}
