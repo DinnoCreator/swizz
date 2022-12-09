@@ -10,7 +10,7 @@ function Perk() {
           <Link to="/about-us">
             <i className={`fa-solid fa-lock ${classes.icon}`}></i>
           </Link>
-          <h3 className={classes.featuresHeading}>Security Gaurantee</h3>
+          <h3 className={classes.featuresHeading}>Security Banking</h3>
           <p>
             Your data and funds would be securely protected.
           </p>
@@ -19,7 +19,7 @@ function Perk() {
           <Link to="/about-us">
             <i className={`fa-solid fa-chart-pie ${classes.icon}`}></i>
           </Link>
-          <h3 className={classes.featuresHeading}>Investing</h3>
+          <h3 className={classes.featuresHeading}>Investment</h3>
           <p>
             We offer you the best and safest investment options.
           </p>
@@ -28,7 +28,7 @@ function Perk() {
           <Link to="/about-us">
             <i className={`fa-solid fa-boxes-stacked ${classes.icon}`}></i>
           </Link>
-          <h3 className={classes.featuresHeading}>Multiple Method</h3>
+          <h3 className={classes.featuresHeading}>Multiple Methods</h3>
           <p>
             A good number of ways for you to bank.
           </p>
