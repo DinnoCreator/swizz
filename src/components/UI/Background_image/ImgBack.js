@@ -13,7 +13,7 @@ const ImgBack = () => {
       </span>
       
     </div>
-    <div className={`carousel-item ${classes.img1}`} data-bs-interval="4000">
+    <div className={`carousel-item ${classes.img}`} data-bs-interval="4000">
       <span>
         <h1 className={`${classes.imgText} ${classes.big}`}>Safe and secure banking service</h1>
         {/* <p className={`${classes.imgText} ${classes.small}`}>

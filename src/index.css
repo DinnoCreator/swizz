@@ -157,7 +157,7 @@ code {
   font-size: 0.9rem;
 }
 
-.carousel-item {
+/* .carousel-item {
   -webkit-transition: opacity 4s ease-in-out !important;
   transition: opacity 4s ease-in-out !important;
 
@@ -166,4 +166,4 @@ code {
 .carousel-fade .active.carousel-item-end {
   -webkit-transition: opacity 4s ease-in-out !important;
   transition: opacity 0 4s !important;
-}
+} */
