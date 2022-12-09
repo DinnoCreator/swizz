@@ -2,7 +2,7 @@ import classes from "./Latest.module.css";
 
 const Latest = () => {
   return (
-    <div className="container">
+    <div className="container" id="latestStories">
       <div className="compact">
         <h3 className={classes.headr3}>Latest Stories</h3>
         <div class="wrapper">

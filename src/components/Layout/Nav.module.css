@@ -10,3 +10,7 @@
     margin-top: 0;
     margin-bottom: 0;
 }
+.cursor{
+    cursor: pointer;
+    color: rgb(54, 54, 54);
+}

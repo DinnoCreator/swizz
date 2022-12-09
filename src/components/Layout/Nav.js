@@ -48,82 +48,12 @@ const Nav = () => {
                     : { color: "#363636" }
                 }
               >
-               <i className="fa-solid fa-circle-info"></i> About Us
+               <i className="fa-solid fa-circle-info"></i> About
               </NavLink>
-            </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link fumu dropdown-toggle"
-                href="/#"
-                id="navbarScrollingDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <span><i className="fa-solid fa-vault"></i> Banking</span>
-              </a>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="navbarScrollingDropdown"
-              >
-                <li>
-                  <NavLink
-                    to="/create"
-                    className="nav-link"
-                    style={({ isActive }) =>
-                      isActive
-                        ? {
-                            color: "rgb(177, 64, 23)",
-                          }
-                        : { color: "#363636" }
-                    }
-                  >
-                    <i className="fa-solid fa-circle-plus"></i> Create Account
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/online"
-                    className="nav-link"
-                    style={({ isActive }) =>
-                      isActive
-                        ? {
-                            color: "rgb(177, 64, 23)",
-                          }
-                        : { color: "#363636" }
-                    }
-                  >
-                   <i className="fa-solid fa-wifi"></i> Online Banking
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/signuponline"
-                    className="nav-link"
-                    style={({ isActive }) =>
-                      isActive
-                        ? {
-                            color: "rgb(177, 64, 23)",
-                          }
-                        : { color: "#363636" }
-                    }
-                  >
-                   <i className="fa-solid fa-user-plus"></i> Sign Up
-                  </NavLink>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a className="dropdown-item fumu" href="#pricing">
-                  <i className="fa-solid fa-money-check-dollar"></i> Dollar Account
-                  </a>
-                </li>
-              </ul>
             </li>
             <li className="nav-item">
               <NavLink
-                to="/pricing"
+                to="/login"
                 className="nav-link"
                 style={({ isActive }) =>
                   isActive
@@ -133,7 +63,34 @@ const Nav = () => {
                     : { color: "#363636" }
                 }
               >
-                <i className="fa-solid fa-tag"></i> Pricing
+               <i class="fa-solid fa-wifi"></i> E-Banking
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <div
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.replace("#latestStories");
+                }}
+              >
+                <span className={`nav-link ${classes.cursor}`}>
+                <i class="fa-regular fa-newspaper"></i> News
+                </span>
+              </div>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="/login"
+                className="nav-link"
+                style={({ isActive }) =>
+                  isActive
+                    ? {
+                        color: "rgb(177, 64, 23)",
+                      }
+                    : { color: "#363636" }
+                }
+              >
+                <i class="fa-solid fa-comments"></i> Contact Us
               </NavLink>
             </li>
           </ul>
