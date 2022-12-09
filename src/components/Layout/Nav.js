@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import classes from "../Layout/Nav.module.css";
 
-const Nav = () => {
+const NavMain = () => {
   return (
     <nav className={`navbar navbar-expand-lg ${classes.navPad}`}>
       <div className="container">
@@ -48,7 +48,7 @@ const Nav = () => {
                     : { color: "#363636" }
                 }
               >
-               <i className="fa-solid fa-circle-info"></i> About
+                <i className="fa-solid fa-circle-info"></i> About
               </NavLink>
             </li>
             <li className="nav-item">
@@ -63,7 +63,7 @@ const Nav = () => {
                     : { color: "#363636" }
                 }
               >
-               <i class="fa-solid fa-wifi"></i> E-Banking
+                <i class="fa-solid fa-wifi"></i> E-Banking
               </NavLink>
             </li>
             <li className="nav-item">
@@ -74,13 +74,13 @@ const Nav = () => {
                 }}
               >
                 <span className={`nav-link ${classes.cursor}`}>
-                <i class="fa-regular fa-newspaper"></i> News
+                  <i class="fa-regular fa-newspaper"></i> News
                 </span>
               </div>
             </li>
             <li className="nav-item">
               <NavLink
-                to="/login"
+                to="/contact"
                 className="nav-link"
                 style={({ isActive }) =>
                   isActive
@@ -98,9 +98,6 @@ const Nav = () => {
       </div>
     </nav>
   );
-}
+};
 
-
-
-
-export default Nav;
+export default NavMain;

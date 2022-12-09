@@ -1,16 +1,16 @@
-.swizzNav{
-    font-weight: 700!important;
-    color: rgb(255, 68, 0);
-    font-size: 28px;
+.swizzNav {
+  font-weight: 700 !important;
+  color: rgb(255, 68, 0);
+  font-size: 28px;
 }
 
-.navPad{
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+.navPad {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-.cursor{
-    cursor: pointer;
-    color: rgb(54, 54, 54);
+.cursor {
+  cursor: pointer;
+  color: rgb(54, 54, 54);
 }

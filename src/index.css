@@ -33,11 +33,11 @@ code {
     monospace;
 }
 
-.center{
+.center {
   text-align: center;
 }
 
-.compact{
+.compact {
   margin: auto 7rem 4rem 7rem;
 }
 .zero {
@@ -45,17 +45,35 @@ code {
   padding-top: 0;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   font-size: larger;
 }
 
+.sub {
+  display: none;
+}
 
+.drop{
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+.myContainer{
+    margin-left: 14rem;
+    margin-right: 14rem;
+}
 @media (max-width: 950px) {
-  .compact{
-      margin: auto 2.5rem 2.5rem 2.5rem;
+  .compact {
+    margin: auto 2.5rem 2.5rem 2.5rem;
   }
-  .centerMid{
+  .centerMid {
     text-align: center;
+  }
+  .sub {
+    display: block;
+  }
+  .subber {
+    display: none;
   }
 }
 
@@ -170,7 +188,7 @@ code {
 }
 .carousel-fade .active.carousel-item-start,
 .carousel-fade .active.carousel-item-end {
-  -webkit-transition: opacity 0 4s!important;
+  -webkit-transition: opacity 0 4s !important;
   transition: opacity 0 4s !important;
 }
 /* Carousel Ending*/

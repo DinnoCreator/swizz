@@ -1,4 +1,4 @@
-import Nav from "../components/Layout/Nav";
+import NavMain from "../components/Layout/Nav";
 import ImgBack from "../components/UI/Background_image/ImgBack";
 import Why from "../components/UI/Why/Why";
 import Perk from "../components/UI/Perks/Perk";
@@ -7,19 +7,19 @@ import Footer from "../components/Layout/Footer";
 import { useEffect } from "react";
 
 const Home = () => {
-    useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-      }, []);
-    return (
-        <>
-        <Nav/>
-        <ImgBack/>
-        <Why/>
-        <Perk/>
-        <Latest/>
-        <Footer/>
-        </>
-    );
-}
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+  return (
+    <>
+      <NavMain />
+      <ImgBack />
+      <Why />
+      <Perk />
+      <Latest />
+      <Footer />
+    </>
+  );
+};
 
 export default Home;

@@ -46,7 +46,7 @@ const Latest = () => {
               </div>
             </div>
           </div>
-          
+
           <div class="card">
             <div class="card-banner">
               <p class="category-tag technology">Technology</p>
@@ -55,11 +55,11 @@ const Latest = () => {
                 href="https://www.cnbc.com/2022/12/07/400-billion-erased-from-european-tech-market-in-2022-atomico-says.html"
                 target="_blank"
               >
-              <img
-                class="banner-img"
-                src="https://images.unsplash.com/photo-1413708617479-50918bc877eb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
-                alt=""
-              />
+                <img
+                  class="banner-img"
+                  src="https://images.unsplash.com/photo-1413708617479-50918bc877eb?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ"
+                  alt=""
+                />
               </a>
             </div>
             <div class="card-body">
