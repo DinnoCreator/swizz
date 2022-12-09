@@ -5,7 +5,7 @@ const Footer = () => {
     <div className={classes.st}>
     <footer>
       <div>
-        <h1 className={classes.headr}>Swizz</h1>
+        <h1 className={classes.headr}>SWIZZ</h1>
       </div>
     </footer>
     </div>

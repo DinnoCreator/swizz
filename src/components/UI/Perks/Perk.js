@@ -10,7 +10,7 @@ function Perk() {
           <Link to="/about-us">
             <i className={`fa-solid fa-lock ${classes.icon}`}></i>
           </Link>
-          <h3 className={classes.featuresHeading}>Security Banking</h3>
+          <h3 className={classes.featuresHeading}>Secure Banking</h3>
           <p>
             Your data and funds would be securely protected.
           </p>
