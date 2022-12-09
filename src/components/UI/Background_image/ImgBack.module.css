@@ -1,3 +1,4 @@
+
 .img {
   text-align: center;
   background-image: 
@@ -7,8 +8,34 @@
   overflow: hidden;
   padding-bottom: 10rem;
   padding-top: 10rem;
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
 }
-.img1 {
+
+@keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:1;
+background-image: 
+  url(https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+ 
+}
+100% {
+opacity:2;
+background-image: 
+  url(https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+ 
+}
+}
+/* .img1 {
   text-align: center;
   background-image: 
   url(https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
@@ -17,7 +44,7 @@
   overflow: hidden;
   padding-bottom: 10rem;
   padding-top: 10rem;
-}
+} */
 
 .imgText {
   box-shadow: rgb(255 68 0) 0.5rem 0px 0px, rgb(255 68 0) -0.5rem 0px 0px;
