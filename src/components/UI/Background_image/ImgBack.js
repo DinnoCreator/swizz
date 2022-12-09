@@ -18,10 +18,33 @@ const ImgBack = () => {
   }, [shuffle])
 
   return (
-  //   <div id="caro" class={`carousel slide carousel-fade ${classes.img0}`} data-bs-ride="carousel">
-  // <div class={`carousel-inner ${classes.img0}`}>
   <>
-    <div className={` ${classes.img}`}>
+
+<div id="caro" class={`${classes.caro} carousel slide carousel-fade`} data-bs-ride="carousel">
+  <div class={`carousel-inner`}>
+    <div className={`carousel-item active ${classes.img1}`} data-bs-interval="4000">
+      <span>
+        <h1 className={`${classes.imgText} ${classes.big}`}>Banking made easy and swift</h1>
+        {/* <p className={`${classes.imgText} ${classes.small}`}>
+          Using cutting edge technology for swift and stress free transactions
+          </p> */}
+      </span>
+      
+    </div>
+    <div className={`carousel-item ${classes.img12}`} data-bs-interval="4000">
+      <span>
+        <h1 className={`${classes.imgText} ${classes.big}`}>Safe and secure banking service</h1>
+        {/* <p className={`${classes.imgText} ${classes.small}`}>
+          Using cutting edge technology for security of client's funds
+          </p> */}
+      </span>
+    </div>
+    </div>
+  </div>
+
+
+
+    <div className={` ${classes.img} ${classes.carol}`}>
       <span>
         <h1 className={`${classes.imgText} ${classes.big}`}>
           {newName === "" ? names[1] : newName}
@@ -35,8 +58,6 @@ const ImgBack = () => {
     </div>
     
     </>
-  //   </div>
-  // </div>
   
   );
 };
