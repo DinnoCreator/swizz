@@ -5,8 +5,8 @@
   background-size: 100%;
   background-repeat: no-repeat;
   overflow: hidden;
-  padding-bottom: 8rem;
-  padding-top: 8rem;
+  padding-bottom: 10rem;
+  padding-top: 10rem;
 }
 .img1 {
   text-align: center;
@@ -15,8 +15,8 @@
   background-size: 100%;
   background-repeat: no-repeat;
   overflow: hidden;
-  padding-bottom: 8rem;
-  padding-top: 8rem;
+  padding-bottom: 10rem;
+  padding-top: 10rem;
 }
 
 .imgText {
@@ -61,12 +61,12 @@
 
 @media (max-width: 450px) {
   .img{
-    padding-top: 4.5rem;
-    padding-bottom: 6.5rem;
+    padding-top: 6.5rem;
+    padding-bottom: 8.5rem;
   }
   .img1{
-    padding-top: 4.5rem;
-    padding-bottom: 6.5rem;
+    padding-top: 6.5rem;
+    padding-bottom: 8.5rem;
   }
   .big{
     margin-bottom: 2%;
