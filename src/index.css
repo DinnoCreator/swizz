@@ -158,7 +158,7 @@ code {
 }
 
 .carousel-item {
-  transition: transform 4s ease-in-out;
+  transition: opacity 4s ease-in-out;
 }
 .carousel-fade .active.carousel-item-start,
 .carousel-fade .active.carousel-item-end {
