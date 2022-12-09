@@ -7,18 +7,18 @@ const ImgBack = () => {
     <div className={`carousel-item active ${classes.img}`} data-bs-interval="4000">
       <span>
         <h1 className={`${classes.imgText} ${classes.big}`}>Banking made easy and swift</h1>
-        <p className={`${classes.imgText} ${classes.small}`}>
+        {/* <p className={`${classes.imgText} ${classes.small}`}>
           Using cutting edge technology for swift and stress free transactions
-          </p>
+          </p> */}
       </span>
       
     </div>
     <div className={`carousel-item ${classes.img1}`} data-bs-interval="4000">
       <span>
         <h1 className={`${classes.imgText} ${classes.big}`}>Safe and secure banking service</h1>
-        <p className={`${classes.imgText} ${classes.small}`}>
+        {/* <p className={`${classes.imgText} ${classes.small}`}>
           Using cutting edge technology for security of client's funds
-          </p>
+          </p> */}
       </span>
     </div>
     </div>
