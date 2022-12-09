@@ -4,7 +4,7 @@ const ImgBack = () => {
   return (
     <div id="caro" class={`carousel slide carousel-fade ${classes.img0}`} data-bs-ride="carousel">
   <div class={`carousel-inner ${classes.img0}`}>
-    <div className={`carousel-item active ${classes.img}`} data-bs-interval="4000">
+    <div className={`carousel-item active ${classes.img}`}>
       <span>
         <h1 className={`${classes.imgText} ${classes.big}`}>Banking made easy and swift</h1>
         {/* <p className={`${classes.imgText} ${classes.small}`}>
