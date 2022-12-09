@@ -162,5 +162,5 @@ code {
 }
 .carousel-fade .active.carousel-item-start,
 .carousel-fade .active.carousel-item-end {
-  transition: opacity 0s 4s;
+  transition: opacity 4s ease-in-out;
 }
