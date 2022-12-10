@@ -4,7 +4,7 @@ import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 
 const DashTwo = (props) => {
-  const [cashVisibility, setCashVisibility] = useState(false);
+  const [cashVisibility, setCashVisibility] = useState(true);
   const HandleVisibility = () => {
     cashVisibility === false
       ? setCashVisibility(true)
