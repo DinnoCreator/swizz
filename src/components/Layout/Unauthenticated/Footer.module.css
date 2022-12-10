@@ -39,6 +39,11 @@ footer {
   padding-top: 15%;
   text-align: center;
 }
+@media (max-width: 950px) {
+  .alice{
+    margin-bottom: 0.5em;
+  }
+}
 .jayden {
   color: aliceblue;
   font-size: large;

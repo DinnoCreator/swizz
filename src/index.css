@@ -57,11 +57,26 @@ code {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
 }
-
+.shadowB{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 .myContainer{
     margin-left: 14rem;
     margin-right: 14rem;
 }
+.roborobo{
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.carousel-indicators button {
+  height: 10px !important;
+  width: 10px !important;
+  margin: 0 10px !important;
+  border-radius: 100%;
+  background-color: rgb(177, 64, 23) !important;
+  }
 @media (max-width: 950px) {
   .compact {
     margin: auto 2.5rem 2.5rem 2.5rem;
@@ -71,6 +86,7 @@ code {
   }
   .sub {
     display: block;
+    margin-bottom: 1em;
   }
   .subber {
     display: none;

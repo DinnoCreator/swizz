@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
-import classes from "../Layout/Nav.module.css";
+import classes from "./DashNav.module.css";
 
-const NavMain = () => {
+const DashNav = () => {
   return (
     <nav className={`navbar navbar-expand-lg ${classes.navPad}`}>
       <div className="container">
-        <a className={`${classes.swizzNav} navbar-brand`} href="/">
+        <a className={`${classes.swizzNav} navbar-brand`} href="/dashboard">
           SWIZZ
         </a>
         <button
@@ -23,7 +23,7 @@ const NavMain = () => {
           <ul className="navbar-nav ms-auto ">
             <li className="nav-item">
               <NavLink
-                to="/"
+                to="/dashboard"
                 className="nav-link"
                 style={({ isActive }) =>
                   isActive
@@ -63,20 +63,8 @@ const NavMain = () => {
                     : { color: "#363636" }
                 }
               >
-                <i class="fa-solid fa-wifi"></i> E-Banking
+                <i className="fa-solid fa-wifi"></i> E-Banking
               </NavLink>
-            </li>
-            <li className="nav-item">
-              <div
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.replace("#latestStories");
-                }}
-              >
-                <span className={`nav-link ${classes.cursor}`}>
-                  <i class="fa-regular fa-newspaper"></i> News
-                </span>
-              </div>
             </li>
             <li className="nav-item">
               <NavLink
@@ -90,7 +78,7 @@ const NavMain = () => {
                     : { color: "#363636" }
                 }
               >
-                <i class="fa-solid fa-comments"></i> Contact Us
+                <i className="fa-solid fa-comments"></i> Contact Us
               </NavLink>
             </li>
           </ul>
@@ -100,4 +88,4 @@ const NavMain = () => {
   );
 };
 
-export default NavMain;
+export default DashNav;

@@ -1,7 +1,7 @@
-import AboutDia from "../components/UI/Dialogue/AboutDia";
-import NavMain from "../components/Layout/Nav";
-import Footer from "../components/Layout/Footer";
-import Latest from "../components/UI/Latest/Latest";
+import AboutDia from "../../components/UI/Dialogue/AboutDia";
+import Nav from "../../components/Layout/Unauthenticated/Nav";
+import Footer from "../../components/Layout/Unauthenticated/Footer";
+import Latest from "../../components/UI/Latest/Latest";
 import { useEffect } from "react";
 
 const About = () => {
@@ -10,7 +10,7 @@ const About = () => {
       }, []);
     return (
         <>
-          <NavMain/>
+          <Nav/>
           <AboutDia/>
           <Latest/>
           <Footer/>

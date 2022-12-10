@@ -1,7 +1,7 @@
-import "./Footer.module.css";
-import classes from "./Footer.module.css";
+import "./DashFoot.module.css";
+import classes from "./DashFoot.module.css";
 import { Link } from "react-router-dom";
-const Footer = () => {
+const DashFooter = () => {
   return (
     <div className={classes.st}>
       <footer>
@@ -9,7 +9,7 @@ const Footer = () => {
           <h1 className={classes.headr}>SWIZZ</h1>
           <div className="row">
             <div className="col-12 col-md-4 centerMid">
-              <Link to="/" className={`${classes.cursor}`}>
+              <Link to="/dashboard" className={`${classes.cursor}`}>
                 Home
               </Link>
               <Link to="/about" className={`${classes.cursor}`}>
@@ -40,7 +40,7 @@ const Footer = () => {
                     target="_blank"
                     href="https://facebook.com"
                   >
-                    <i class="fa-brands fa-facebook"></i>
+                    <i className="fa-brands fa-facebook"></i>
                   </a>
                 </span>
                 <span className={`${classes.dara}`}>
@@ -49,7 +49,7 @@ const Footer = () => {
                     target="_blank"
                     href="https://twitter.com"
                   >
-                    <i class="fa-brands fa-twitter"></i>
+                    <i className="fa-brands fa-twitter"></i>
                   </a>
                 </span>
                 <span className={`${classes.dara}`}>
@@ -58,7 +58,7 @@ const Footer = () => {
                     target="_blank"
                     href="https://instagram.com"
                   >
-                    <i class="fa-brands fa-instagram"></i>
+                    <i className="fa-brands fa-instagram"></i>
                   </a>
                 </span>
                 <span className={`${classes.dara}`}>
@@ -67,7 +67,7 @@ const Footer = () => {
                     target="_blank"
                     href="https://mail.google.com"
                   >
-                    <i class="fa-solid fa-envelope"></i>
+                    <i className="fa-solid fa-envelope"></i>
                   </a>
                 </span>{" "}
                 <br></br>
@@ -77,12 +77,12 @@ const Footer = () => {
             <div className={`col-12 col-md-4 ${classes.jayden} subber`}>
               <span className={`${classes.dara}`}>
                 <a rel="noreferrer" target="_blank" href="https://facebook.com">
-                  <i class="fa-brands fa-facebook"></i>
+                  <i className="fa-brands fa-facebook"></i>
                 </a>
               </span>
               <span className={`${classes.dara}`}>
                 <a rel="noreferrer" target="_blank" href="https://twitter.com">
-                  <i class="fa-brands fa-twitter"></i>
+                  <i className="fa-brands fa-twitter"></i>
                 </a>
               </span>
               <span className={`${classes.dara}`}>
@@ -91,7 +91,7 @@ const Footer = () => {
                   target="_blank"
                   href="https://instagram.com"
                 >
-                  <i class="fa-brands fa-instagram"></i>
+                  <i className="fa-brands fa-instagram"></i>
                 </a>
               </span>
               <span className={`${classes.dara}`}>
@@ -100,7 +100,7 @@ const Footer = () => {
                   target="_blank"
                   href="https://mail.google.com"
                 >
-                  <i class="fa-solid fa-envelope"></i>
+                  <i className="fa-solid fa-envelope"></i>
                 </a>
               </span>
             </div>
@@ -111,4 +111,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default DashFooter;

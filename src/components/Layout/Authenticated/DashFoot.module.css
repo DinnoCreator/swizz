@@ -1,0 +1,64 @@
+footer {
+    background-color: rgb(43, 37, 35);
+    position: absolute;
+    width: 100%;
+  }
+  .st {
+    position: relative;
+  }
+  .headr {
+    color: rgb(255, 68, 0);
+    font-size: 4em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  
+  .cursor {
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    padding-left: 0.6em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    /* margin-top: 0.5em;
+      margin-bottom: 0.5em; */
+    font-size: large;
+    color: aliceblue;
+  }
+  
+  .cursor:hover {
+    background-color: aliceblue;
+    color: rgb(43, 37, 35);
+  }
+  
+  .alice {
+    color: aliceblue;
+    font-size: large;
+    padding-top: 15%;
+    text-align: center;
+  }
+  @media (max-width: 950px) {
+    .alice{
+      margin-bottom: 0.5em;
+    }
+  }
+  .jayden {
+    color: aliceblue;
+    font-size: large;
+    text-align: center;
+  }
+  .dara {
+    margin-left: 1em;
+    font-size: larger;
+  }
+  
+  .dara a {
+    color: aliceblue;
+  }
+  
+  .dara a:hover {
+    font-size: x-large;
+  }
+  
