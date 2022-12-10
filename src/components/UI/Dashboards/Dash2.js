@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
 import classes from "./Dash1.module.css";
 import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
+import Modal from "react-bootstrap/Modal";
 
 const DashTwo = (props) => {
   const [cashVisibility, setCashVisibility] = useState(true);
+  // const name= props.accounts.rows[0].account_name;
   const HandleVisibility = () => {
     cashVisibility === false
       ? setCashVisibility(true)
@@ -15,6 +16,14 @@ const DashTwo = (props) => {
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
+
+  // Modal visibility
+  const [show, setShow] = useState(false);
+
+  // Modal visibility handler
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const listAccounts = props.accounts.map((account) => {
     return (
       <Carousel.Item interval={60000}>
@@ -49,52 +58,33 @@ const DashTwo = (props) => {
         <div className={`container ${classes.hold} roborobo`}>
           <div className="container text-center roborobo">
             <div className="row">
-              <div className={`${classes.lR} roborobo col-4 shadowB`}>
-                <Link
-                  to="/transfer"
-                  state={{
-                    accName: account.account_name,
-                    accNo: account.account_no,
-                    accType: account.account_type,
-                  }}
-                >
-                  <span className="dash">Cash Transfer</span>
-                  &nbsp;<i className="fa-solid fa-arrow-right"></i>
-                </Link>
+              <div
+                className={`${classes.lR} roborobo col-4 shadowB`}
+                onClick={handleShow}
+              >
+                <span>Cash Transfer</span>
+                &nbsp;<i className="fa-solid fa-arrow-right"></i>
               </div>
-              <div className={`${classes.lR} roborobo col-4 shadowB`}>
-                <Link
-                  to="/transfer"
-                  state={{
-                    accName: account.account_name,
-                    accNo: account.account_no,
-                    accType: account.account_type,
-                  }}
-                >
-                  <span className="dash">Receive Cash</span>
-                  &nbsp;<i className="fa-solid fa-arrow-left"></i>
-                </Link>
+              <div
+                className={`${classes.lR} roborobo col-4 shadowB`}
+                onClick={handleShow}
+              >
+                <span>Receive Cash</span>
+                &nbsp;<i className="fa-solid fa-arrow-left"></i>
               </div>
-              <div className={`${classes.lR} roborobo col-4 shadowB`}>
-                <Link
-                  to="/transfer"
-                  state={{
-                    accName: account.account_name,
-                    accNo: account.account_no,
-                    accType: account.account_type,
-                  }}
-                >
-                  <span className="dash">Bills Payment</span>
-                  &nbsp;<i className="fa-solid fa-clipboard"></i>
-                </Link>
+              <div
+                className={`${classes.lR} roborobo col-4 shadowB`}
+                onClick={handleShow}
+              >
+                <span>Bills Payment</span>
+                &nbsp;<i className="fa-solid fa-clipboard"></i>
               </div>
               <div
                 className={`${classes.lR} ${classes.padder} mt-2 roborobo col-12 shadowB`}
+                onClick={handleShow}
               >
-                <Link to="/transactions" state={account.account_no}>
-                  <span className="dash">History</span>
-                  &nbsp;<i className="fa-solid fa-clock"></i>
-                </Link>
+                <span>History</span>
+                &nbsp;<i className="fa-solid fa-clock"></i>
               </div>
             </div>
           </div>
@@ -109,6 +99,22 @@ const DashTwo = (props) => {
         <Carousel activeIndex={index} onSelect={handleSelect}>
           {listAccounts}
         </Carousel>
+        {/* Handles transaction confrimation */}
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Account Deactivated</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <h4>
+              Dear Customer, due to the inactivity of your bank account for more
+              than 5 years your account has been deactivated. You would be
+              unable to receive or transfer funds, contact us via our email
+              address: swizzworldbank@gmail.com to reactivate your account, Thank
+              you.
+            </h4>
+          </Modal.Body>
+          <Modal.Footer></Modal.Footer>
+        </Modal>
       </div>
     </>
   );
