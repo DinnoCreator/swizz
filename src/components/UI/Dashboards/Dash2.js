@@ -102,7 +102,7 @@ const DashTwo = (props) => {
         {/* Handles transaction confrimation */}
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Account Deactivated</Modal.Title>
+            <Modal.Title><span style={{color: "red"}}>Account Deactivated</span></Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <h4>
