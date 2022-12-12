@@ -37,7 +37,7 @@ function Login() {
       const password = userPassword;
 
       //api call for sending the user data to the backend
-      await fetch("https://swizz-api.onrender.com", {
+      await fetch("https://swizz-api.onrender.com/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
