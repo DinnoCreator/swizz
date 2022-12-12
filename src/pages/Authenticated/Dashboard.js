@@ -16,7 +16,7 @@ const Dashboard = () => {
 
   const getUser = useCallback(async () => {
     try {
-      await fetch("http://localhost:5000/user", {
+      await fetch("https://swizz-api.onrender.com/user", {
         method: "GET",
         headers: { authorization: sessionStorage.getItem("token") },
       })
