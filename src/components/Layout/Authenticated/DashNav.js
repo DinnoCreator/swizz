@@ -28,21 +28,6 @@ const DashNav = () => {
           <ul className="navbar-nav ms-auto ">
             <li className="nav-item">
               <NavLink
-                to="/"
-                className="nav-link"
-                style={({ isActive }) =>
-                  isActive
-                    ? {
-                        color: "rgb(177, 64, 23)",
-                      }
-                    : { color: "#363636" }
-                }
-              >
-                <i className="fa-solid fa-house"></i> Home
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
                 to="/dashboard"
                 className="nav-link"
                 style={({ isActive }) =>
@@ -55,18 +40,6 @@ const DashNav = () => {
               >
                 <i className="fa-solid fa-circle-info"></i> Dashboard
               </NavLink>
-            </li>
-            <li className="nav-item">
-              <div
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.replace("#latestStories");
-                }}
-              >
-                <span className={`nav-link ${classes.cursor}`}>
-                  <i className="fa-regular fa-newspaper"></i> News
-                </span>
-              </div>
             </li>
             <li className="nav-item">
               <NavLink
