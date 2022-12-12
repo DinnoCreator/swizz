@@ -9,22 +9,9 @@ const DashFooter = () => {
           <h1 className={classes.headr}>SWIZZ</h1>
           <div className="row">
             <div className="col-12 col-md-4 centerMid">
-              <Link to="/" className={`${classes.cursor}`}>
-                Home
-              </Link>
               <Link to="/dashboard" className={`${classes.cursor}`}>
                 Dashboard
               </Link>
-              <a
-                href="/notalink"
-                className={`${classes.cursor}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.replace("#latestStories");
-                }}
-              >
-                News
-              </a>
               <Link to="/contact" className={`${classes.cursor}`}>
                 Contact Us
               </Link>
