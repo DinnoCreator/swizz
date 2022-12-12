@@ -243,9 +243,9 @@ a{
 .loaderBig{
   border: 16px solid #f3f3f3; /* Light grey */
   border-top: 16px solid #E4E9FD; /* Blue */
-  border-right: 16px solid #A683E3;
-  border-left: 16px solid #A683E3;
-  border-bottom: 16px solid #A683E3;
+  border-right: 16px solid rgb(255, 68, 0);
+  border-left: 16px solid rgb(255, 68, 0);
+  border-bottom: 16px solid rgb(255, 68, 0);
   border-radius: 50%;
   width: 120px;
   height: 120px;
