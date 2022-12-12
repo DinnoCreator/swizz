@@ -1,7 +1,12 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import classes from "./DashNav.module.css";
 
 const DashNav = () => {
+  let navigate = useNavigate();
+  function handleClick() {
+    sessionStorage.clear();
+    return navigate("/");
+  }
   return (
     <nav className={`navbar navbar-expand-lg ${classes.navPad}`}>
       <div className="container">
@@ -23,7 +28,7 @@ const DashNav = () => {
           <ul className="navbar-nav ms-auto ">
             <li className="nav-item">
               <NavLink
-                to="/dashboard"
+                to="/"
                 className="nav-link"
                 style={({ isActive }) =>
                   isActive
@@ -38,7 +43,7 @@ const DashNav = () => {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/about"
+                to="/dashboard"
                 className="nav-link"
                 style={({ isActive }) =>
                   isActive
@@ -48,23 +53,20 @@ const DashNav = () => {
                     : { color: "#363636" }
                 }
               >
-                <i className="fa-solid fa-circle-info"></i> About
+                <i className="fa-solid fa-circle-info"></i> Dashboard
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink
-                to="/login"
-                className="nav-link"
-                style={({ isActive }) =>
-                  isActive
-                    ? {
-                        color: "rgb(177, 64, 23)",
-                      }
-                    : { color: "#363636" }
-                }
+              <div
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.location.replace("#latestStories");
+                }}
               >
-                <i className="fa-solid fa-wifi"></i> E-Banking
-              </NavLink>
+                <span className={`nav-link ${classes.cursor}`}>
+                  <i className="fa-regular fa-newspaper"></i> News
+                </span>
+              </div>
             </li>
             <li className="nav-item">
               <NavLink
@@ -80,6 +82,11 @@ const DashNav = () => {
               >
                 <i className="fa-solid fa-comments"></i> Contact Us
               </NavLink>
+            </li>
+            <li className="nav-item">
+              <button className="btn shadowB" onClick={handleClick}>
+               <i className="fa-solid fa-right-from-bracket"></i> Log Out
+              </button>
             </li>
           </ul>
         </div>

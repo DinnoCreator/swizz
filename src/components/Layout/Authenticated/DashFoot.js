@@ -9,11 +9,11 @@ const DashFooter = () => {
           <h1 className={classes.headr}>SWIZZ</h1>
           <div className="row">
             <div className="col-12 col-md-4 centerMid">
-              <Link to="/dashboard" className={`${classes.cursor}`}>
+              <Link to="/" className={`${classes.cursor}`}>
                 Home
               </Link>
-              <Link to="/about" className={`${classes.cursor}`}>
-                About
+              <Link to="/dashboard" className={`${classes.cursor}`}>
+                Dashboard
               </Link>
               <a
                 href="/notalink"
@@ -25,9 +25,6 @@ const DashFooter = () => {
               >
                 News
               </a>
-              <Link to="/login" className={`${classes.cursor}`}>
-                E-Banking
-              </Link>
               <Link to="/contact" className={`${classes.cursor}`}>
                 Contact Us
               </Link>

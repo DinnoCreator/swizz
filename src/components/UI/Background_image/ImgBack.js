@@ -42,7 +42,7 @@ const ImgBack = () => {
           </div>
           <div
             className={`carousel-item ${classes.img12}`}
-            data-bs-interval="4000"
+            data-bs-interval="6000"
           >
             <span>
               <h1 className={`${classes.imgText} ${classes.big}`}>
