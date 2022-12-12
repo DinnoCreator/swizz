@@ -63,7 +63,7 @@ function Create() {
       const accBal1 = amount1;
 
       //api call for sending the user data to the backend
-      await fetch("http://localhost:5000/create", {
+      await fetch("https://swizz-api.onrender.com/create", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
