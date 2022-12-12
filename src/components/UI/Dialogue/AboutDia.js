@@ -21,9 +21,9 @@ const AboutDia = () => {
             The Swizz World Bank group strategy has a clear focus on
             strengthening and simplifying the integrated model and investing in
             sustainable growth, while placing risk management at the very core
-            of the Bank. With a global business and regional structure, Credit
-            Suisse strengthens cross-divisional collaboration within the Bank to
-            promote sustainable growth and economic profit.
+            of the Bank. With a global business and regional structure, Swizz 
+            World Bank strengthens cross-divisional collaboration within the 
+            Bank to promote sustainable growth and economic profit.
           </p>
           <p>
             We serve our clients through four divisions: Wealth Management,
