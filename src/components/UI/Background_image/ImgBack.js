@@ -28,8 +28,7 @@ const ImgBack = () => {
       >
         <div class={`carousel-inner`}>
           <div
-            className={`carousel-item active ${classes.img1}`}
-            data-bs-interval="6000"
+            className={`carousel-item fader active ${classes.img1}`}
           >
             <span>
               <h1 className={`${classes.imgText} ${classes.big}`}>
@@ -41,8 +40,7 @@ const ImgBack = () => {
             </span>
           </div>
           <div
-            className={`carousel-item ${classes.img12}`}
-            data-bs-interval="6000"
+            className={`carousel-item fader ${classes.img12}`}
           >
             <span>
               <h1 className={`${classes.imgText} ${classes.big}`}>
