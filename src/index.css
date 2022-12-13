@@ -260,7 +260,7 @@ a{
 /* News Ending */
 
 /* Carousel */
-/* .carousel-item {
+.fader {
   -webkit-transition: opacity 4s ease-in-out !important;
   transition: opacity 4s ease-in-out !important;
 }
@@ -268,5 +268,5 @@ a{
 .carousel-fade .active.carousel-item-end {
   -webkit-transition: opacity 0 4s !important;
   transition: opacity 0 4s !important;
-} */
+}
 /* Carousel Ending*/
